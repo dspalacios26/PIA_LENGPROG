@@ -1,0 +1,4 @@
+Regla(objeto_1, objeto_2, …, objeto_i):- 
+hecho_1(objeto_1, objeto_2, …, objeto_n), hecho_2(objeto_1, 
+objeto_2, …, objeto_n), ….., hecho_m(objeto_1, objeto_2, …, 
+objeto_n).
