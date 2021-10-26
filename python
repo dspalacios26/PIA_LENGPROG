@@ -1,0 +1,18 @@
+# programa de python para encontrar n numeros de la
+# serie de fibonacci usando recursion
+
+def recur_fibo(n):
+   if n <= 1:
+       return n
+   else:
+       return(recur_fibo(n-1) + recur_fibo(n-2))
+
+terminos = 10
+
+# validacion de la cantidad de numeros
+if terminos <= 0:
+   print("Introduzca un entero por favor.")
+else:
+   print("Secuencia:")
+   for i in range(terminos):
+       print(recur_fibo(i))
