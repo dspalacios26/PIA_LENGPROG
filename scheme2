@@ -1,0 +1,21 @@
+;Programa para dibujar un triángulo
+;la definición de la variable T es para
+;declarar que el triangulo que se generará
+;será con asteriscos
+(define (T) (display "*"))
+
+;esta función pone un espacio entre cada asterisco
+(define (dibuje cant) 
+   (do ((i 0 (+ i 1)))
+       ((= i cant) )
+     (t)
+       (display " ")))
+
+;esta función me imprime el triángulo y puedo
+;manipular las dimensiones
+(define (triangulo) 
+
+   (do ((i 1 (+ i 1)));observa como se hace el ciclo :D
+         ((= i 10) )
+     (dibuje i);llamada a la funcion
+     (newline)));pasa renglon
