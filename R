@@ -15,7 +15,7 @@ fib <- function(n) {
     return(a)
 }
 
-#se imprimen n cantidad de números que el usuario introduzca,
+#se imprimen n cantidad de números que el usuario introduzca
 #en este caso puse 20 pero se puede modificar para que 
 #reciba un input e imprimir esa cantidad de números
 
