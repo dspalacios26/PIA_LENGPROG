@@ -1,0 +1,22 @@
+#definimos la función de fib a ser una función que reciba un número
+
+fib <- function(n) {
+    a = 0
+    b = 1
+    #aquí es similar a python, no utiliza
+    #la sináxis como en C o Java que es
+    #(for(i=0;i<n;i++){}
+    
+    for (i in 1:n) {
+        temp = b
+        b = a
+        a = a + twmp
+    }
+    return(a)
+}
+
+#se imprimen n cantidad de números que el usuario introduzca,
+#en este caso puse 20 pero se puede modificar para que 
+#reciba un input e imprimir esa cantidad de números
+
+print(fib(79), digits=20)
