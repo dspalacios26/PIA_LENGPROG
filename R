@@ -1,5 +1,7 @@
 #definimos la función de fib a ser una función que reciba un número
 
+install.packages("gmp")
+require(gmp)
 fib <- function(n) {
     a = 0
     b = 1
@@ -10,7 +12,10 @@ fib <- function(n) {
     for (i in 1:n) {
         temp = b
         b = a
-        a = a + twmp
+        #esta es una función de GMP para tener valores con mayor 
+        #precisión, debido a que cuando pasa de 16 dígitos, o 53 bits
+        #R comienza a ser impreciso
+        a = add.bigz(a, temp) 
     }
     return(a)
 }
