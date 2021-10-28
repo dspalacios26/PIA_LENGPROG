@@ -24,4 +24,4 @@ fib <- function(n) {
 #en este caso puse 20 pero se puede modificar para que 
 #reciba un input e imprimir esa cantidad de números
 
-print(fib(79), digits=20)
+print(fib(79))
