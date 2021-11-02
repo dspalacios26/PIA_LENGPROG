@@ -3,7 +3,9 @@ with Ada.Text_IO, Ada.Integer_Text_IO;
 --las operaciones terminan con ;
 procedure Fibonacci is
 begin
-   declare 
+   --es posible declarar antes o despues del begin
+   declare
+      --función de fibonacci que recibe un entero
       function Fib (N: Integer) return Integer is
       begin
          if N<3 then
@@ -14,6 +16,7 @@ begin
       end Fib;
    i: Integer := 1;
    begin
+      --función main o principal
       --los loops como observamos son muy diferentes a otros lenguajes
       loop
          --utiliza recursión
@@ -23,6 +26,7 @@ begin
          i := i + 1;
          exit when i=17;
       end loop;
+      --con "use" se omitiría la sig línea
       Ada.Text_IO.Put ("...");
    end;
 end Fibonacci;
