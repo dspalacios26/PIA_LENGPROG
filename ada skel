@@ -2,7 +2,9 @@
 procedure
  <nombre del Programa Principal>
 is
- <declaracion de constantes>< declaracion de tipos ><procedimientos del programa>
+ <declaracion de constantes>
+ < declaracion de tipos >
+ <procedimientos del programa>
  -----------------------------------------------------------
  Comienzo del Programa Principal
  ---------------------------------------------------------
