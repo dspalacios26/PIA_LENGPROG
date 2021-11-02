@@ -1,0 +1,28 @@
+--Se introducen las librerias de input y output
+with Ada.Text_IO, Ada.Integer_Text_IO;
+--las operaciones terminan con ;
+procedure Fibonacci is
+begin
+   declare 
+      function Fib (N: Integer) return Integer is
+      begin
+         if N<3 then
+            return 1;
+         else 
+            return Fib(N-1) + Fib(N-2);
+         end if;
+      end Fib;
+   i: Integer := 1;
+   begin
+      --los loops como observamos son muy diferentes a otros lenguajes
+      loop
+         --utiliza recursión
+         Ada.Integer_Text_IO.Put (Item => Fib(i), Width => 1);
+         Ada.Text_IO.Put (", ");
+         --no es posible usar el i++
+         i := i + 1;
+         exit when i=17;
+      end loop;
+      Ada.Text_IO.Put ("...");
+   end;
+end Fibonacci;
