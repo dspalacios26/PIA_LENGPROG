@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+<head>
+</head>
 <body>
 
-<h1>My first PHP page</h1>
+<h1>Página de ejemplo PHP PIA</h1>
 
 <?php
 //cualquier
