@@ -1,0 +1,32 @@
+/* Inicializacion del programa
+de busqueda en vector, Diego Sebastian
+Palacios Muñoz 2077805 JV4 21/10/2021 */
+
+import java.util.Scanner;
+
+public class tarea19 {
+    public static void main(String[] args) {
+        Scanner a = new Scanner(System.in);
+        int x, y, i, cont=0; 
+
+        System.out.println("Introduzca la cantidad de términos del arreglo: ");
+        y = a.nextInt();
+        int[] array = new int[y];
+        for(i=0; i<y; i++){
+            System.out.println("Introduzca el término " + (i+1) + ": ");
+            array[i] = a.nextInt();
+        }
+        System.out.println("Introduzca el número a buscar: ");
+        x = a.nextInt();
+
+        for(i=0; i<array.length; i++){
+            if(array[i] == x)
+                cont++;
+        }
+        System.out.println("El número " + x + " aparece " + cont + " veces en el vector.");
+        /* hay una falsa alarma en el código o en el IDE de VSCode que insinúa que el input "a"
+        no lo he cerrado pero abajo ya lo cerré, investigué y se trata sólo de un bug, me parece que 
+        en eclipse no aparece este bug */
+        a.close();
+    }
+}
